@@ -16,6 +16,30 @@ export const categories: ("ALL" | Category)[] = [
   "COMMERCIAL",
 ];
 
+export type LightboxImage = { src: string; caption: string; alt: string };
+export type CaseStudyImage = LightboxImage & { aspect: string };
+
+const weddingGallery: CaseStudyImage[] = [
+  {
+    src: "/images/work-wedding-story.jpg",
+    caption: "Wedding Spread 01 — Bride beneath lantern light, Haveli courtyard",
+    alt: "Bride in a red embroidered lehenga adjusting her veil in a candlelit heritage courtyard.",
+    aspect: "aspect-[16/10]",
+  },
+  {
+    src: "/images/wedding-hasta-milap.jpg",
+    caption: "Wedding Detail 02 — Hasta Milap, joined hands",
+    alt: "Bride and groom's hands joined during a traditional Indian wedding ceremony, surrounded by pink orchid garlands.",
+    aspect: "aspect-square",
+  },
+  {
+    src: "/images/wedding-confetti.jpg",
+    caption: "Wedding Detail 03 — Confetti at the abbey door",
+    alt: "Newlyweds walking out of a gothic stone church doorway as guests throw confetti.",
+    aspect: "aspect-square",
+  },
+];
+
 export type Project = {
   /** Uppercase title shown in the case-study drawer */
   title: string;
@@ -27,6 +51,8 @@ export type Project = {
   place: string;
   category: string;
   synopsis: string;
+  /** Drawer photobook sequence (1 wide + 2 square); falls back to caseStudyImages */
+  gallery?: CaseStudyImage[];
 };
 
 export type Plate = Project & {
@@ -52,6 +78,7 @@ export const plates: Plate[] = [
     place: "Ahmedabad · 2026",
     category: "Weddings",
     filter: "WEDDINGS",
+    gallery: weddingGallery,
     series: "Archival Gelatin Silver Series / 01",
     synopsis:
       "A three-day traditional and contemporary synthesis within the vaulted corridors of an ancestral Haveli. Documented on medium format Tri-X.",
@@ -141,6 +168,7 @@ export const plates: Plate[] = [
     place: "Jaipur · 2025",
     category: "Weddings",
     filter: "WEDDINGS",
+    gallery: weddingGallery,
     series: "Ceremony Details / 06",
     synopsis:
       "The joining of hands beneath orchid and rose garlands. A study of the quiet gestures inside a traditional ceremony — henna, bangles, and the thread that binds two families.",
@@ -158,6 +186,7 @@ export const plates: Plate[] = [
     place: "Somerset · 2025",
     category: "Weddings",
     filter: "WEDDINGS",
+    gallery: weddingGallery,
     series: "35mm Colour Negative / 07",
     synopsis:
       "An English countryside celebration beneath a gothic stone arch. Petals in the air, guests lining the path, and the first steps taken together in late summer sun.",
@@ -175,6 +204,7 @@ export const plates: Plate[] = [
     place: "London · 2025",
     category: "Weddings",
     filter: "WEDDINGS",
+    gallery: weddingGallery,
     series: "Engagement Portrait / 08",
     synopsis:
       "A winter engagement portrait — one ring, clasped hands, and the unguarded laughter that arrives just after the formal frame.",
@@ -197,9 +227,7 @@ export const featuredStory: Project = {
     "An uninterrupted fourteen-day solo residency studying sea fog, glacial tides, and the fragility of coastal outposts.",
 };
 
-export type LightboxImage = { src: string; caption: string; alt: string };
-
-export const caseStudyImages: (LightboxImage & { aspect: string })[] = [
+export const caseStudyImages: CaseStudyImage[] = [
   {
     src: "/images/case-study-01.jpg",
     caption: "Case Study Spread 01",

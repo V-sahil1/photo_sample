@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import Icon from "@/components/Icon";
-import { caseStudyImages, type LightboxImage, type Project } from "@/lib/content";
+import { caseStudyImages, type CaseStudyImage, type LightboxImage, type Project } from "@/lib/content";
 
 type OverlayContextValue = {
   openProject: (project: Project) => void;
@@ -67,6 +67,7 @@ export default function OverlayProvider({ children }: { children: React.ReactNod
   }, [anyOpen, lightbox, closeLightbox, closeProject, step]);
 
   const current = lightbox ? lightbox.images[lightbox.index] : null;
+  const gallery = project?.gallery ?? caseStudyImages;
 
   return (
     <OverlayContext.Provider value={{ openProject, openLightbox }}>
@@ -115,19 +116,19 @@ export default function OverlayProvider({ children }: { children: React.ReactNod
               {/* Photobook layout sequence */}
               <div className="mb-space-lg space-y-space-md">
                 <CaseStudyPlate
-                  index={0}
-                  onOpen={() => openLightbox(caseStudyImages, 0)}
+                  img={gallery[0]}
+                  onOpen={() => openLightbox(gallery, 0)}
                   sizes="(min-width: 768px) 700px, 100vw"
                 />
                 <div className="grid grid-cols-2 gap-space-sm">
                   <CaseStudyPlate
-                    index={1}
-                    onOpen={() => openLightbox(caseStudyImages, 1)}
+                    img={gallery[1]}
+                    onOpen={() => openLightbox(gallery, 1)}
                     sizes="(min-width: 768px) 350px, 50vw"
                   />
                   <CaseStudyPlate
-                    index={2}
-                    onOpen={() => openLightbox(caseStudyImages, 2)}
+                    img={gallery[2]}
+                    onOpen={() => openLightbox(gallery, 2)}
                     sizes="(min-width: 768px) 350px, 50vw"
                   />
                 </div>
@@ -217,15 +218,14 @@ export default function OverlayProvider({ children }: { children: React.ReactNod
 }
 
 function CaseStudyPlate({
-  index,
+  img,
   onOpen,
   sizes,
 }: {
-  index: number;
+  img: CaseStudyImage;
   onOpen: () => void;
   sizes: string;
 }) {
-  const img = caseStudyImages[index];
   return (
     <button
       aria-label={`View ${img.caption}`}
