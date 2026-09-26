@@ -1,0 +1,188 @@
+@import "tailwindcss" source(none);
+@source "../app";
+@source "../components";
+@source "../lib";
+
+/* Design tokens from the Stitch "Atelier Curatorial" system (DESIGN.md) */
+@theme {
+  --color-surface: #faf9f5;
+  --color-surface-dim: #dbdad6;
+  --color-surface-bright: #faf9f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f4f0;
+  --color-surface-container: #efeeea;
+  --color-surface-container-high: #e9e8e4;
+  --color-surface-container-highest: #e3e2df;
+  --color-surface-variant: #e3e2df;
+  --color-surface-tint: #5f5e5e;
+  --color-on-surface: #1b1c1a;
+  --color-on-surface-variant: #444748;
+  --color-inverse-surface: #30312e;
+  --color-inverse-on-surface: #f2f1ed;
+  --color-outline: #747878;
+  --color-outline-variant: #c4c7c7;
+  --color-background: #faf9f5;
+  --color-on-background: #1b1c1a;
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1c1b1b;
+  --color-on-primary-container: #858383;
+  --color-inverse-primary: #c8c6c5;
+  --color-secondary: #685d51;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #edddce;
+  --color-on-secondary-container: #6c6155;
+  --color-tertiary: #000000;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #1d1b1a;
+  --color-on-tertiary-container: #868381;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+
+  --text-display-hero: 64px;
+  --text-display-hero--line-height: 72px;
+  --text-display-hero--letter-spacing: -0.02em;
+  --text-display-hero--font-weight: 400;
+  --text-display-hero-mobile: 40px;
+  --text-display-hero-mobile--line-height: 48px;
+  --text-display-hero-mobile--letter-spacing: -0.01em;
+  --text-headline-lg: 44px;
+  --text-headline-lg--line-height: 52px;
+  --text-headline-lg--letter-spacing: -0.015em;
+  --text-headline-lg--font-weight: 400;
+  --text-headline-lg-mobile: 30px;
+  --text-headline-lg-mobile--line-height: 38px;
+  --text-headline-lg-mobile--letter-spacing: -0.01em;
+  --text-headline-md: 32px;
+  --text-headline-md--line-height: 40px;
+  --text-headline-md--letter-spacing: -0.01em;
+  --text-headline-md--font-weight: 400;
+  --text-headline-sm: 24px;
+  --text-headline-sm--line-height: 32px;
+  --text-headline-sm--letter-spacing: 0em;
+  --text-headline-sm--font-weight: 400;
+  --text-body-editorial: 20px;
+  --text-body-editorial--line-height: 32px;
+  --text-body-editorial--letter-spacing: 0em;
+  --text-body-lg: 15px;
+  --text-body-lg--line-height: 24px;
+  --text-body-lg--letter-spacing: -0.01em;
+  --text-body-md: 13px;
+  --text-body-md--line-height: 20px;
+  --text-body-md--letter-spacing: 0em;
+  --text-label-caps: 11px;
+  --text-label-caps--line-height: 14px;
+  --text-label-caps--letter-spacing: 0.12em;
+  --text-label-caps--font-weight: 500;
+  --text-caption-meta: 11px;
+  --text-caption-meta--line-height: 16px;
+  --text-caption-meta--letter-spacing: 0.02em;
+
+  --spacing-gutter: 2rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-margin: 4rem;
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 2rem;
+  --spacing-space-xl: 4rem;
+}
+
+/* Font families resolve to the next/font variables set on <html> */
+@theme inline {
+  --font-serif: var(--font-eb-garamond), "EB Garamond", Georgia, serif;
+  --font-sans: var(--font-inter), "Inter", system-ui, sans-serif;
+  --font-display-hero: var(--font-eb-garamond), "EB Garamond", Georgia, serif;
+  --font-display-hero-mobile: var(--font-eb-garamond), "EB Garamond", Georgia, serif;
+  --font-headline-lg: var(--font-eb-garamond), "EB Garamond", Georgia, serif;
+  --font-headline-lg-mobile: var(--font-eb-garamond), "EB Garamond", Georgia, serif;
+  --font-headline-md: var(--font-eb-garamond), "EB Garamond", Georgia, serif;
+  --font-headline-sm: var(--font-eb-garamond), "EB Garamond", Georgia, serif;
+  --font-body-editorial: var(--font-eb-garamond), "EB Garamond", Georgia, serif;
+  --font-body-lg: var(--font-inter), "Inter", system-ui, sans-serif;
+  --font-body-md: var(--font-inter), "Inter", system-ui, sans-serif;
+  --font-label-caps: var(--font-inter), "Inter", system-ui, sans-serif;
+  --font-caption-meta: var(--font-inter), "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scrollbar-width: none;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  line-height: 1;
+  user-select: none;
+}
+
+/*
+ * GSAP reveal targets stay hidden between first paint and hydration so they never flash
+ * before animating. The .motion class is set by the inline bootstrap in app/layout.tsx;
+ * .motion-ready is added once ScrollAnimations has applied the starting states.
+ */
+.motion:not(.motion-ready)
+  :is([data-split], [data-reveal], [data-reveal-group] > *, [data-reveal-media], [data-hero-in]) {
+  visibility: hidden;
+}
+
+/* Keep descenders and italic overhangs from clipping inside SplitText line masks */
+:is([data-split], [data-hero-title]) > div {
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+
+@keyframes drawer-in {
+  from {
+    transform: translateX(2rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-drawer-in {
+  animation: drawer-in 400ms ease-out both;
+}
+
+.animate-fade-in {
+  animation: fade-in 250ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-drawer-in,
+  .animate-fade-in {
+    animation: none;
+  }
+}

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Photography Portfolio</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; } #cursor-dot, #cursor-ring { pointer-events: none; position: fixed; border-radius: 9999px; z-index: 9999; transform: translate(-50%, -50%); transition: opacity 0.2s ease; } #cursor-dot { width: 4px; height: 4px; } #cursor-ring { width: 28px; height: 28px; transition: transform 0.12s ease-out, width 0.2s ease, height 0.2s ease; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed": "#e5e2e1", "tertiary": "#000000", "primary-fixed-dim": "#c8c6c5", "on-surface": "#1b1c1a", "inverse-primary": "#c8c6c5", "surface-container-low": "#f5f4f0", "on-primary": "#ffffff", "outline-variant": "#c4c7c7", "surface": "#faf9f5", "secondary-fixed": "#f0e0d1", "tertiary-fixed-dim": "#cac6c3", "on-secondary-fixed-variant": "#4f453a", "outline": "#747878", "primary": "#000000", "on-error": "#ffffff", "on-surface-variant": "#444748", "inverse-surface": "#30312e", "surface-container-highest": "#e3e2df", "secondary": "#685d51", "tertiary-fixed": "#e6e1df", "inverse-on-surface": "#f2f1ed", "on-tertiary-fixed-variant": "#484645", "error": "#ba1a1a", "on-tertiary-container": "#868381", "on-tertiary-fixed": "#1d1b1a", "on-primary-container": "#858383", "error-container": "#ffdad6", "surface-variant": "#e3e2df", "surface-tint": "#5f5e5e", "on-primary-fixed-variant": "#474646", "surface-container-high": "#e9e8e4", "background": "#faf9f5", "on-primary-fixed": "#1c1b1b", "secondary-container": "#edddce", "on-tertiary": "#ffffff", "surface-dim": "#dbdad6", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#d3c4b5", "surface-bright": "#faf9f5", "on-secondary-container": "#6c6155", "on-secondary-fixed": "#221a11", "on-error-container": "#93000a", "primary-container": "#1c1b1b", "on-background": "#1b1c1a", "tertiary-container": "#1d1b1a", "surface-container": "#efeeea" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "4rem", "space-md": "1rem", "gutter": "2rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "space-lg": "2rem", "margin": "4rem", "gutter-mobile": "1rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["EB Garamond"], "body-md": ["Inter"], "headline-lg": ["EB Garamond"], "display-hero": ["EB Garamond"], "body-editorial": ["EB Garamond"], "body-lg": ["Inter"], "display-hero-mobile": ["EB Garamond"], "headline-md": ["EB Garamond"], "caption-meta": ["Inter"], "label-caps": ["Inter"], "headline-lg-mobile": ["EB Garamond"] }, fontSize: { "headline-sm": ["24px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "400" }], "body-md": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg": ["44px", { lineHeight: "52px", letterSpacing: "-0.015em", fontWeight: "400" }], "display-hero": ["64px", { lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "400" }], "body-editorial": ["20px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "400" }], "body-lg": ["15px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "400" }], "display-hero-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.01em", fontWeight: "400" }], "headline-md": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "400" }], "caption-meta": ["11px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "400" }], "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.12em", fontWeight: "500" }], "headline-lg-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.01em", fontWeight: "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-surface-container-highest selection:text-primary"><div class="hidden md:block bg-primary" id="cursor-dot"></div><div class="hidden md:block border border-outline-variant/40" id="cursor-ring"></div><header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.02)] transition-all duration-300"><div class="h-20 w-full px-margin-mobile md:px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><a class="font-headline-sm text-headline-sm tracking-tight text-primary hover:opacity-80 transition-opacity" data-path="work" href="#">AURELIEN VANCE</a><span class="font-caption-meta text-caption-meta text-outline hidden sm:inline-block ml-space-xs">EST. 2014</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-medium"><a aria-current="page" class="uppercase transition-colors tracking-widest text-primary font-medium" data-path="work" href="#">Work</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="about" href="#">About</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="services" href="#">Services</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs py-space-xs px-space-sm text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase tracking-widest" type="button"><span class="hidden sm:inline">Index</span><span class="material-symbols-outlined text-[18px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full selection:bg-surface-container-highest selection:text-primary">
+<!-- Floating Cursor Prompt Follower (Client Micro-interaction) -->
+<div class="fixed pointer-events-none z-50 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-200 hidden lg:flex items-center justify-center px-space-sm py-1 bg-primary text-on-primary font-label-caps text-label-caps tracking-widest uppercase" id="dynamic-cursor-badge">
+<span id="dynamic-cursor-text">VIEW</span>
+</div>
+<!-- 1. HERO SECTION -->
+<section class="relative w-full h-screen -mt-20 overflow-hidden bg-primary flex flex-col justify-between p-margin-mobile md:p-margin">
+<!-- Fine Art Archival Hero Photo with subtle scale-down on mount -->
+<div class="absolute inset-0 w-full h-full overflow-hidden" id="hero-media-wrap">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-[2200ms] ease-out scale-[1.04]" data-alt="Editorial fine art portrait of an ethereal woman standing in a stark concrete brutalist courtyard in Paris, sculpted midday raking sun casting crisp geometric shadows, monochrome high contrast with rich warm silver undertones, high fashion minimalist gown, archival 35mm film grain texture." id="hero-bg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAl-NQh_fBImr7xpLadOKUzcCJ22YTeqemeR8-AlhzTEpzQ4KsIZlChAaSCguFccrwB55uiAXUCJTcorBzotN56UVVnXK5wB1SJdjj7ASLx1P27865DOmm8IjaTIXbImueXiae7ggsNQbeOaICkzIavpR-vMruVH_3qJHyFn5pLFgmqGqNcGfsXZA7cjtOXkYpAeYFKTOpoQXtgO53cR2de1AIAZTpKdnhJMEViTiJ6WGtd5WlGEU0k')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-primary/40"></div>
+</div>
+<!-- Top Spacer for App Shell Header Clearance -->
+<div class="relative z-10 w-full pt-20 flex justify-between items-start">
+<span class="font-label-caps text-label-caps text-surface/80 uppercase tracking-widest">Fine Art Monograph / Vol. VII</span>
+<span class="font-label-caps text-label-caps text-surface/80 uppercase tracking-widest hidden sm:inline">Paris · Copenhagen</span>
+</div>
+<!-- Center / Bottom Typography & Statement -->
+<div class="relative z-10 w-full max-w-6xl pb-space-lg flex flex-col justify-end">
+<div class="space-y-space-xs mb-space-md opacity-0 translate-y-4 transition-all duration-1000 delay-300" id="hero-text-block">
+<p class="font-label-caps text-label-caps uppercase tracking-[0.25em] text-surface/75">
+          Eléna Vance — Photographer / Visual Artist
+        </p>
+<h1 class="font-display-hero text-display-hero md:text-[84px] md:leading-[90px] text-surface font-normal tracking-tight">
+          Capturing moments that deserve to be remembered.
+        </h1>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-end justify-between pt-space-md border-t border-surface/20 gap-space-sm">
+<p class="font-body-md text-body-md text-surface/80 max-w-sm">
+          Archival silver prints, medium format negatives, and documentary observation worldwide.
+        </p>
+<a class="group inline-flex items-center gap-space-xs text-surface hover:text-surface-container-highest transition-colors" href="#selected-work">
+<span class="font-label-caps text-label-caps tracking-widest uppercase">SCROLL</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-y-1 transition-transform">south</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 2. SELECTED WORK (Editorial Asymmetric Gallery) -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-background" id="selected-work">
+<!-- Section Header & Archival Ledger Meta -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl pb-space-sm border-b border-surface-container-highest gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest block mb-space-xs">Portfolio Index</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Selected Work</h2>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant mt-space-xs">
+          A collection of moments, people, places and stories.
+        </p>
+</div>
+<!-- Category Filter Bar (Clean Editorial Text Slash Dividers) -->
+<div class="flex flex-wrap items-center gap-x-space-sm gap-y-2 font-label-caps text-label-caps uppercase tracking-widest" id="filter-container">
+<button class="gallery-filter-btn text-primary underline underline-offset-4 cursor-pointer" data-category="ALL">ALL</button>
+<span class="text-outline-variant">/</span>
+<button class="gallery-filter-btn text-outline hover:text-primary cursor-pointer transition-colors" data-category="PORTRAITS">PORTRAITS</button>
+<span class="text-outline-variant">/</span>
+<button class="gallery-filter-btn text-outline hover:text-primary cursor-pointer transition-colors" data-category="WEDDINGS">WEDDINGS</button>
+<span class="text-outline-variant">/</span>
+<button class="gallery-filter-btn text-outline hover:text-primary cursor-pointer transition-colors" data-category="FASHION">FASHION</button>
+<span class="text-outline-variant">/</span>
+<button class="gallery-filter-btn text-outline hover:text-primary cursor-pointer transition-colors" data-category="TRAVEL">TRAVEL</button>
+<span class="text-outline-variant">/</span>
+<button class="gallery-filter-btn text-outline hover:text-primary cursor-pointer transition-colors" data-category="COMMERCIAL">COMMERCIAL</button>
+</div>
+</div>
+<!-- Asymmetric Editorial Grid Sequence -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter" id="gallery-grid">
+<!-- Plate 01: Wide Landscape (Span 7) -->
+<div class="gallery-item md:col-span-7 flex flex-col space-y-space-xs cursor-pointer group" data-category="WEDDINGS" onclick="openProject('THE WEDDING STORY', 'Ahmedabad, India · 2026', 'Weddings', 'A three-day traditional and contemporary synthesis within the vaulted corridors of an ancestral Haveli. Documented on medium format Tri-X.')">
+<div class="relative overflow-hidden bg-surface-container aspect-[16/10]">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-[1.03]" data-alt="Intimate candlelit documentary photograph of a bride adjusting silk veil in heritage Indian architecture courtyard, soft warm amber lantern glow, deep textured shadows, 35mm film grain, museum quality fine art print aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBI5OrV71dP-dt3-EUqp2RuTwQSeDcMKdsIp2s1ol8kdMd_p0XJhAoYkw2SKJe6kS6HygCMhF6bSKesj4rPhdLTnOQNBQChy9BAqZYMgRJjStnyQS9pOhMaEfSGMxQZ-5xrnb-OZMwKqu0Aviak6Mszos9aSxt0RI--VNkKWIHBxJQfbQxRDHeUUEOMf6Lz15aKG8ds_6mtnlqBoPY3GzW3Rmxa_RxKah4G0daz55VelEIti83z_Fbm')"></div>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300 flex items-end p-space-md opacity-0 group-hover:opacity-100">
+<span class="font-label-caps text-label-caps text-surface uppercase tracking-widest flex items-center gap-space-xs">
+              View Project <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</span>
+</div>
+</div>
+<div class="flex justify-between items-baseline pt-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary group-hover:opacity-75 transition-opacity">The Wedding Story</span>
+<span class="font-caption-meta text-caption-meta text-outline">Ahmedabad · 2026</span>
+</div>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">Archival Gelatin Silver Series / 01</span>
+</div>
+<!-- Plate 02: Narrow Vertical Portrait (Span 5) -->
+<div class="gallery-item md:col-span-5 flex flex-col space-y-space-xs cursor-pointer group" data-category="PORTRAITS" onclick="openProject('ECHOES OF SILENCE', 'Copenhagen, Denmark · 2025', 'Portraits', 'A meditation on quiet interior spaces and scandinavian winter light. Portraying ceramicists and writers in their undisturbed studio routines.')">
+<div class="relative overflow-hidden bg-surface-container aspect-[3/4]">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-[1.03]" data-alt="Sculptural black and white studio portrait of an elderly artist with expressive hands, gentle chiaroscuro natural window light from left, deep velvety black backdrop, warm tones, high dynamic range Hasselblad capture." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_HXBPvmXfHqW2dpME0GUWIw4slgwoGqHcwshcB9o8lZ5-yrhOGZ_tWlW-y3Fimt1blmi216wXjL7-EnBnNRLql4GS86rw6xkEOBMMday7QPwP6I8W0zMS8BLvgak2ci_vAv9GdJpLvF4lhosOg4XBSPae8crw11xDa104cPhxWe6zMpBgdDUHeE205OTSRA4ZCr5BZBSzjbw3iZd704bPA2cy8xeF_kgjiJc6M87C6D4dEy6eQBw_')"></div>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300 flex items-end p-space-md opacity-0 group-hover:opacity-100">
+<span class="font-label-caps text-label-caps text-surface uppercase tracking-widest flex items-center gap-space-xs">
+              View Project <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</span>
+</div>
+</div>
+<div class="flex justify-between items-baseline pt-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary group-hover:opacity-75 transition-opacity">Echoes of Silence</span>
+<span class="font-caption-meta text-caption-meta text-outline">Copenhagen · 2025</span>
+</div>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">Natural Light Monograph / 02</span>
+</div>
+<!-- Plate 03: Full-Bleed Panorama (Span 12) with negative offset spacing -->
+<div class="gallery-item md:col-span-12 flex flex-col space-y-space-xs cursor-pointer group my-space-sm" data-category="TRAVEL" onclick="openProject('SOLITUDE IN KYOTO', 'Kyoto, Japan · 2025', 'Travel', 'Dawn studies along the philosopher pathway and bamboo sanctuaries. Exploring silence and temporal stillness in historic Kansai.')">
+<div class="relative overflow-hidden bg-surface-container aspect-[21/9]">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-[1.02]" data-alt="Wide cinematic vista of misty dawn over wooden Zen temple gardens in Kyoto, damp raked gravel, weeping cedar silhouettes through morning fog, subdued muted green and charcoal tones, serene documentary photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJdcUDXKsg2Zo5Z06Lm_W3eBwH_6Wa282Am0tcQOj8VcuWDceReKzrgDVeaDyH9pJ6NPRWQeBshHZj3ih5Xdp-Rpgj-qxQ5itCDrA2xxu8lN20E9-rJFFgUsQZr6ZLBWXryRLNda-0sA8qHRucVe_p2S-PKxl782LUw2VJJxBJxH5O3to3jyfgbuOom4xNQJjpyA4G4IrJUHwuVW3P5GsG9B5-1iUlefs9dWvmZTuix3o8VwrBDq8y')"></div>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300 flex items-end p-space-md opacity-0 group-hover:opacity-100">
+<span class="font-label-caps text-label-caps text-surface uppercase tracking-widest flex items-center gap-space-xs">
+              View Project <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</span>
+</div>
+</div>
+<div class="flex justify-between items-baseline pt-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary group-hover:opacity-75 transition-opacity">Solitude in Kyoto</span>
+<span class="font-caption-meta text-caption-meta text-outline">Kyoto · 2025</span>
+</div>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">Spatial Architecture Survey / 03</span>
+</div>
+<!-- Plate 04: Offset Left Small Square (Span 4) -->
+<div class="gallery-item md:col-span-4 flex flex-col space-y-space-xs cursor-pointer group" data-category="FASHION" onclick="openProject('HAUTE COUTURE N°4', 'Paris Fashion Week · 2026', 'Fashion', 'Backstage silhouettes and textile textures caught between runway presentations at Palais de Tokyo. Raw, candid, unfiltered elegance.')">
+<div class="relative overflow-hidden bg-surface-container aspect-square">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-[1.03]" data-alt="Editorial fashion detail shot focusing on pleated raw silk organza against bare skin, dramatic theatrical side lighting, micro textures, rich monochrome tones, Vogue Italia magazine aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAguVxGFDXfIHDoi2AegmS3TZ5IHrRIaOe7Gu1tW4zA6vAr5nK0h4iFbZMK60AUfE_8hnopDtSF7Ucs7dxflY0cHIdipbH76HfOOLkTQpRuxb-C1yaNqmM_0V6QtGvy_PiB4awNevE8fO1d0MpOuWnv3JqzNpeRvX0k1llY8mGUJrBkfmjd6HQwh-IDCahxCXcW8bTJZkF27lOmcZpQxw81RilX6BTODwrR1HpPqQGKhggk9Wbzzn_')"></div>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300 flex items-end p-space-md opacity-0 group-hover:opacity-100">
+<span class="font-label-caps text-label-caps text-surface uppercase tracking-widest flex items-center gap-space-xs">
+              View Project <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</span>
+</div>
+</div>
+<div class="flex justify-between items-baseline pt-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary group-hover:opacity-75 transition-opacity">Haute Couture N°4</span>
+<span class="font-caption-meta text-caption-meta text-outline">Paris · 2026</span>
+</div>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">Editorial Commission / 04</span>
+</div>
+<!-- Plate 05: Editorial Duo (Span 8) -->
+<div class="gallery-item md:col-span-8 flex flex-col space-y-space-xs cursor-pointer group" data-category="COMMERCIAL" onclick="openProject('TERRAFORMING LIGHT', 'Reykjavík, Iceland · 2025', 'Commercial', 'Commission for a Nordic modernist furniture atelier. Monolithic timber and volcanic basalt surfaces staged against Icelandic glacial skies.')">
+<div class="relative overflow-hidden bg-surface-container aspect-[16/10]">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-[1.03]" data-alt="Architectural photograph of a sculptural oak bench on black volcanic sand under diffused overcast sub-Arctic skylight, distant raw glaciers, moody Nordic atmosphere, impeccable graphic composition." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCKObRk0AJ_QqLmzFqb9T7I4q515cktATCWt7HyVqgohOwCXZZv-BFAHhIPQKApBDU6n-UbAxPcJvBw-2jo9GiA7RJc0WD5qttPTX-Bj3SMcKlRRA3S5R7VmFkD6ebyrDQeC5V2FgrMucQDvXCla-EEs63kHujXuM1wfoa0v13TRqrRQGpvI6fIatCj5prPNKLjNzrHbucmeiFMkEuCqTE6gpl_oi6QBacrmAcjzguz5JC_v40Ua0Zs')"></div>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300 flex items-end p-space-md opacity-0 group-hover:opacity-100">
+<span class="font-label-caps text-label-caps text-surface uppercase tracking-widest flex items-center gap-space-xs">
+              View Project <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</span>
+</div>
+</div>
+<div class="flex justify-between items-baseline pt-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary group-hover:opacity-75 transition-opacity">Terraforming Light</span>
+<span class="font-caption-meta text-caption-meta text-outline">Reykjavík · 2025</span>
+</div>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">Spatial Objects &amp; Matter / 05</span>
+</div>
+</div>
+</section>
+<!-- 3. ABOUT & PHILOSOPHY ('MY APPROACH') -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-low border-y border-surface-container-highest">
+<!-- Two Column Spread -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start mb-space-xl">
+<!-- Left: Authentic B&W Photographer Portrait in Studio -->
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Intimate authentic black and white portrait of female photographer Eléna Vance holding a vintage medium format camera in an airy Paris artist loft studio, natural gentle northern window exposure, relaxed posture, tactile linen background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDry4cWVSNwbMcG82sRp9GYaSjaQtddsWHJdHUQN2L4f6Km5C5J2IL6gce3czkXNUIYs23CP1j0t_iW7rInG6kPCcjBnYpQhVklliEjW1NNW6Q_NMPVzF1rDj6zLWl5jcviSgu1uvsqEkkhEz65Dohk9b3Dx5VfrCwEEx6hq9O3imzbfmrByyKpXq7ImkOeQqZYSGHx0zTW3yJWO_4Gk5d7bhajETzLGMt-EBIE7nj_c2QclnwjzODU')"></div>
+</div>
+<div class="pt-space-xs flex justify-between text-outline">
+<span class="font-caption-meta text-caption-meta">Plate N° 82 — Atelier Vance</span>
+<span class="font-caption-meta text-caption-meta">Rue Charlot, 75003</span>
+</div>
+</div>
+<!-- Right: Editorial Typographic Narrative -->
+<div class="md:col-span-7 flex flex-col justify-between h-full space-y-space-lg md:pl-space-lg">
+<div>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest block mb-space-sm">About The Artist</span>
+<h3 class="font-display-hero text-headline-lg md:text-display-hero text-primary tracking-tight leading-[1.08] mb-space-md">
+            “I photograph people, stories &amp; moments.”
+          </h3>
+<p class="font-body-editorial text-body-editorial text-on-surface leading-relaxed mb-space-md">
+            Over twelve years of documentary and editorial practice, I have rejected contrived posturing in favor of raw cadence. Photography, to me, is not the creation of an illusion, but the patient acknowledgment of an existing truth.
+          </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-space-lg">
+            Specializing in heirloom wedding monographs, fine art portraiture, and architectural narratives, each commission is treated as a limited printed work bound to outlast digital impermanence.
+          </p>
+</div>
+<div class="pt-space-md border-t border-surface-container-highest flex flex-col sm:flex-row justify-between items-start sm:items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">
+            BASED IN COPENHAGEN / PARIS · AVAILABLE WORLDWIDE
+          </span>
+<a class="font-label-caps text-label-caps text-primary underline underline-offset-4 tracking-widest uppercase hover:text-outline transition-colors" href="#contact-inquiry">
+            Inquire For 2026/27 →
+          </a>
+</div>
+</div>
+</div>
+<!-- 3-Part Method / Philosophy Matrix -->
+<div class="pt-space-xl border-t border-surface-container-highest">
+<div class="mb-space-md">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest">Methodology</span>
+<h4 class="font-headline-md text-headline-md text-primary mt-1">My Approach</h4>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter pt-space-sm">
+<div class="space-y-space-xs">
+<span class="font-caption-meta text-caption-meta text-outline tracking-widest block">01 / DISCIPLINE</span>
+<h5 class="font-headline-sm text-headline-sm text-primary">OBSERVE</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Finding the moments that happen naturally. Without intervention, waiting until the subject forgets the lens entirely.
+          </p>
+</div>
+<div class="space-y-space-xs">
+<span class="font-caption-meta text-caption-meta text-outline tracking-widest block">02 / ARCHITECTURE</span>
+<h5 class="font-headline-sm text-headline-sm text-primary">FRAME</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Creating compositions with intention. Harmonizing negative space, tactile materials, and ambient daylight into balanced equilibrium.
+          </p>
+</div>
+<div class="space-y-space-xs">
+<span class="font-caption-meta text-caption-meta text-outline tracking-widest block">03 / ARTIFACT</span>
+<h5 class="font-headline-sm text-headline-sm text-primary">PRESERVE</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Turning temporary moments into lasting physical images. Fine archival papers, non-acidic cotton rags, and hand-bound cloth albums.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. FEATURED STORY (Cinematic Banner with Masked Contrast) -->
+<section class="relative w-full py-space-xl md:py-32 bg-primary text-on-primary overflow-hidden px-margin-mobile md:px-margin flex flex-col justify-center items-center text-center">
+<div class="absolute inset-0 opacity-40 bg-cover bg-center" data-alt="Dramatic high-contrast fine art black and white photograph of an empty coastline in the Faroe Islands, brooding atmospheric storm clouds sweeping across steep Nordic basalt cliffs, cinematic scale." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTLAkMxxtHqDMSTnl5eAhgooU19bLhhPv0aQQhwH2dfomJtnFKDyFtPLLO_E_cx2sdsgA6lleEqZjjQrTBJNjFN5_nsjmqVj7IMoeS4wFLkmjx399I4FrNQd7pYlygTW2Jj0n-b7oaZNunlgB4rSX400ndOLOyKJC7Py1-meXKw_pa-pbkPB2Nl19YEzbF2-HolABucxIcHZxE67tDCAerX2QHCMYH-15v1do3yi9kqFNcrTFHJgHy')"></div>
+<div class="absolute inset-0 bg-primary/60"></div>
+<div class="relative z-10 max-w-3xl flex flex-col items-center space-y-space-md">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.3em] text-surface-container-high">Featured Story</span>
+<h2 class="font-display-hero text-headline-lg md:text-[68px] leading-tight text-surface font-normal">
+        “A Moment in Time.”
+      </h2>
+<p class="font-body-editorial text-body-editorial text-surface-container-high max-w-xl">
+        A documented journey through the remote western fjords, where silence has physical weight and light shifts every heartbeat.
+      </p>
+<button class="mt-space-sm px-8 py-3 bg-surface text-primary font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container-highest transition-colors cursor-pointer" onclick="openProject('A MOMENT IN TIME', 'Vestfirðir, Iceland · Winter', 'Documentary', 'An uninterrupted fourteen-day solo residency studying sea fog, glacial tides, and the fragility of coastal outposts.')">
+        EXPLORE STORY →
+      </button>
+</div>
+</section>
+<!-- 5. SERVICES (Minimal Horizontal Rows Accordion) -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-background">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg pb-space-sm border-b border-surface-container-highest gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest block mb-space-xs">Commissions</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Services &amp; Practices</h2>
+</div>
+<span class="font-caption-meta text-caption-meta text-outline max-w-xs">
+        Each project is tailored with archival print curation and bespoke photographic sequencing.
+      </span>
+</div>
+<!-- Accordion Rows -->
+<div class="divide-y divide-surface-container-highest border-b border-surface-container-highest">
+<!-- Service 01 -->
+<div class="service-row group py-space-md cursor-pointer transition-colors hover:bg-surface-container-low px-space-xs" onclick="toggleService(this)">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-baseline gap-space-md">
+<span class="font-caption-meta text-caption-meta text-outline w-8">01</span>
+<span class="font-headline-sm text-headline-sm text-primary group-hover:translate-x-2 transition-transform">Wedding Photography</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant hidden md:inline">Documentary / Bespoke Monograph / Worldwide</span>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-transform service-icon">expand_more</span>
+</div>
+</div>
+<div class="service-details hidden pt-space-md pb-space-xs grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+            Unobtrusive, cinematic recording of your marriage celebrations. Covering multi-day international destinations with a balance of 35mm candid film and medium format family portraits. Includes archival box and gallery delivery.
+          </div>
+<div class="md:col-span-4 flex justify-end items-end">
+<a class="font-label-caps text-label-caps uppercase tracking-widest underline underline-offset-4 text-primary" href="#contact-inquiry">Request Rate Card →</a>
+</div>
+</div>
+</div>
+<!-- Service 02 -->
+<div class="service-row group py-space-md cursor-pointer transition-colors hover:bg-surface-container-low px-space-xs" onclick="toggleService(this)">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-baseline gap-space-md">
+<span class="font-caption-meta text-caption-meta text-outline w-8">02</span>
+<span class="font-headline-sm text-headline-sm text-primary group-hover:translate-x-2 transition-transform">Portrait Photography</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant hidden md:inline">Artists / Authors / Editorial Profiles</span>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-transform service-icon">expand_more</span>
+</div>
+</div>
+<div class="service-details hidden pt-space-md pb-space-xs grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+            Intimate studio sessions capturing the quiet nuance of personality. Designed for publication monographs, record sleeves, and artist portfolios utilizing natural light settings.
+          </div>
+<div class="md:col-span-4 flex justify-end items-end">
+<a class="font-label-caps text-label-caps uppercase tracking-widest underline underline-offset-4 text-primary" href="#contact-inquiry">Inquire Portrait →</a>
+</div>
+</div>
+</div>
+<!-- Service 03 -->
+<div class="service-row group py-space-md cursor-pointer transition-colors hover:bg-surface-container-low px-space-xs" onclick="toggleService(this)">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-baseline gap-space-md">
+<span class="font-caption-meta text-caption-meta text-outline w-8">03</span>
+<span class="font-headline-sm text-headline-sm text-primary group-hover:translate-x-2 transition-transform">Fashion &amp; Editorial</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant hidden md:inline">Campaigns / Lookbooks / Periodicals</span>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-transform service-icon">expand_more</span>
+</div>
+</div>
+<div class="service-details hidden pt-space-md pb-space-xs grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+            Collaborative visual concepts for forward-thinking maisons and independent designers. Emphasizing movement, tactile fibers, and authentic cinematic environments.
+          </div>
+<div class="md:col-span-4 flex justify-end items-end">
+<a class="font-label-caps text-label-caps uppercase tracking-widest underline underline-offset-4 text-primary" href="#contact-inquiry">Lookbook Inquiries →</a>
+</div>
+</div>
+</div>
+<!-- Service 04 -->
+<div class="service-row group py-space-md cursor-pointer transition-colors hover:bg-surface-container-low px-space-xs" onclick="toggleService(this)">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-baseline gap-space-md">
+<span class="font-caption-meta text-caption-meta text-outline w-8">04</span>
+<span class="font-headline-sm text-headline-sm text-primary group-hover:translate-x-2 transition-transform">Events &amp; Gatherings</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant hidden md:inline">Private Salons / Vernissages / Symposiums</span>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-transform service-icon">expand_more</span>
+</div>
+</div>
+<div class="service-details hidden pt-space-md pb-space-xs grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+            Capturing the atmosphere of cultural gatherings, gallery inaugurations, and private dinners with documentary discretion and understated panache.
+          </div>
+<div class="md:col-span-4 flex justify-end items-end">
+<a class="font-label-caps text-label-caps uppercase tracking-widest underline underline-offset-4 text-primary" href="#contact-inquiry">Book Event →</a>
+</div>
+</div>
+</div>
+<!-- Service 05 -->
+<div class="service-row group py-space-md cursor-pointer transition-colors hover:bg-surface-container-low px-space-xs" onclick="toggleService(this)">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-baseline gap-space-md">
+<span class="font-caption-meta text-caption-meta text-outline w-8">05</span>
+<span class="font-headline-sm text-headline-sm text-primary group-hover:translate-x-2 transition-transform">Commercial Photography</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant hidden md:inline">Architects / Design Studios / Hospitality</span>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-transform service-icon">expand_more</span>
+</div>
+</div>
+<div class="service-details hidden pt-space-md pb-space-xs grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+            Documenting spatial harmony, craft processes, and brand heritage for luxury studios, hoteliers, and design institutions globally.
+          </div>
+<div class="md:col-span-4 flex justify-end items-end">
+<a class="font-label-caps text-label-caps uppercase tracking-widest underline underline-offset-4 text-primary" href="#contact-inquiry">Commercial Briefs →</a>
+</div>
+</div>
+</div>
+<!-- Service 06 -->
+<div class="service-row group py-space-md cursor-pointer transition-colors hover:bg-surface-container-low px-space-xs" onclick="toggleService(this)">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-baseline gap-space-md">
+<span class="font-caption-meta text-caption-meta text-outline w-8">06</span>
+<span class="font-headline-sm text-headline-sm text-primary group-hover:translate-x-2 transition-transform">Creative Projects &amp; Books</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant hidden md:inline">Self-Published Monographs / Art Residencies</span>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-transform service-icon">expand_more</span>
+</div>
+</div>
+<div class="service-details hidden pt-space-md pb-space-xs grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+            Collaborative art book development from field documentation through prepress typography and Japanese binding specifications.
+          </div>
+<div class="md:col-span-4 flex justify-end items-end">
+<a class="font-label-caps text-label-caps uppercase tracking-widest underline underline-offset-4 text-primary" href="#contact-inquiry">Propose Project →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. CLIENT EXPERIENCE (Process / Architectural Flow) -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-low">
+<div class="mb-space-xl">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest block mb-space-xs">The Protocol</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Client Experience</h2>
+</div>
+<!-- 4 Steps with hairline connection -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative">
+<!-- Step 01 -->
+<div class="space-y-space-sm relative">
+<div class="w-8 h-8 rounded-full bg-surface border border-surface-container-highest flex items-center justify-center font-caption-meta text-caption-meta text-primary font-medium">
+          01
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-primary">DISCOVER</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Initial consultation to discuss the context, emotional goals, locations, and aesthetic expectations of the commission.
+        </p>
+</div>
+<!-- Step 02 -->
+<div class="space-y-space-sm relative">
+<div class="w-8 h-8 rounded-full bg-surface border border-surface-container-highest flex items-center justify-center font-caption-meta text-caption-meta text-primary font-medium">
+          02
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-primary">PLAN</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Lighting reconnaissance, site surveys, wardrobe palette alignment, and shot-list curation without constraining spontaneity.
+        </p>
+</div>
+<!-- Step 03 -->
+<div class="space-y-space-sm relative">
+<div class="w-8 h-8 rounded-full bg-surface border border-surface-container-highest flex items-center justify-center font-caption-meta text-caption-meta text-primary font-medium">
+          03
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-primary">SHOOT</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          An immersive, fluid production where we honor the organic momentum of the day using natural light and deliberate framing.
+        </p>
+</div>
+<!-- Step 04 -->
+<div class="space-y-space-sm relative">
+<div class="w-8 h-8 rounded-full bg-surface border border-surface-container-highest flex items-center justify-center font-caption-meta text-caption-meta text-primary font-medium">
+          04
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-primary">DELIVER</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Archival master scans, bespoke web vault access, and tailored physical linen-bound photobooks delivered to your home.
+        </p>
+</div>
+</div>
+</section>
+<!-- 7. PHOTO WALL & TESTIMONIALS (Irregular Overlapping Masonry) -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-background overflow-hidden">
+<!-- Testimonial Quote -->
+<div class="max-w-4xl mx-auto text-center py-space-lg space-y-space-sm">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-[0.2em] block">Endorsement</span>
+<p class="font-display-hero text-headline-md md:text-headline-lg text-primary tracking-tight italic">
+        “The photographs feel like memories we can step back into. Not posed artifacts, but breathing pieces of our lived lives.”
+      </p>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant uppercase tracking-widest pt-space-xs">
+        Aurelia &amp; Julian — Private Estate, Provence
+      </p>
+</div>
+<!-- Overlapping Photo Mosaic -->
+<div class="grid grid-cols-12 gap-gutter items-center mt-space-lg">
+<div class="col-span-6 md:col-span-3 -mt-6">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Editorial candid detail of hands exchanging a ceramic sake cup during quiet wedding dinner, low ambient candle flicker, grain texture, deep shadows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHRuTiCuvkxgeprWM4IcLsXHEwJwC29JK5BfE9aRNNMU8xsCaSDoRI3nyaigb7F3askKpfyZi4LqRPW7CM5r7F1xbPaM1x2HDQyixQ8uOt7f4G9Ig-XUR-GEjTrhqBt5P3L4DDzy90D-ulK7yjn_s5glZy-BBD6OvXw7Ds40IRMQT1ec0bCq2CdLuF7Hm8qb0Wrq29Mid9ynyf1-pw1MLcrHHvUmA2LRwr68Zm2vuJCwYGJxiwRmTb')"></div>
+</div>
+</div>
+<div class="col-span-6 md:col-span-5">
+<div class="aspect-[16/10] bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Cinematic wide shot of a solitary figure walking along the stone parapets of an ancient Tuscan monastery at dusk, golden hour horizon, deep violet sky, fine art monochrome balance." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNt_nYnlhcu406VZvxTs2CP4QujuR5g9M2T4w6Q9e6KfGTmoucKwG7cbjm1fTRLfwb92QVATUNi_0Astp8qeqdmCRlUTTi39-iLt45CGAd8lTqXEoGsTaDnOOczdg8z2oeG6NvAJIbaWB1AiGktuyVkaGkGHaNJy9xAQQA2iOlcw0oEwO3XYQMFWjy1GDaaZECxqBnRcLaZ9HvZzCTRG8QUWWL2GhEEi37EdNyQXBMSN4EZpFbVcA-')"></div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 -mt-10 md:-ml-8 z-10">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close up archival portrait of woman smiling softly with eyes closed in rain, water droplet textures on wool coat, editorial black and white clarity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyx3s_Ow-TCZP1TobrNrGbWZWidxT71vkoh8JQFosfr04pGJ3SUFCE1XZYVYFZbxtoDB5vxYjczQMyo_Qadsrp-9N_uIMNQx2SEcXNImwdPlA89w-_ukHsT8KMTYuqRQw-VSb1JefXj79AA2PilVtKIz1HvTMa9TlT3lZsypR-D983Hk9ui6v1PCCtecPA5-4S-LvUkEOq_T_0YKYbu7lI2SAxT5V-Hzy_2j3dY8RsWCX3jOoY95Ae')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. INSTAGRAM & RECENT DISPATCHES -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-low border-t border-surface-container-highest">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-space-lg pb-space-sm border-b border-surface-container-highest gap-space-xs">
+<div>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest block mb-space-xs">Studio Dispatches</span>
+<h2 class="font-headline-md text-headline-md text-primary">More Work — Follow the Latest Stories</h2>
+</div>
+<a class="font-label-caps text-label-caps text-primary uppercase tracking-widest hover:text-outline transition-colors flex items-center gap-space-xs" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+        @ELENAVANCE.STUDIO <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+<!-- 6-Image Curated Minimal Grid -->
+<div class="grid grid-cols-2 md:grid-cols-6 gap-space-sm">
+<div class="aspect-square bg-surface-container overflow-hidden group relative cursor-pointer" onclick="openLightbox('placeholder', 'Plate 01 — Morning mist over the Seine, Paris')">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Fine art photograph of foggy morning over the Seine river in Paris, silhouette of bridges, grainy atmospheric monochrome." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvx1tHW6iJ7fNOI0vhSkIxorh8Jgbj8cyvvtr4THiG3NMC8041NwRHcTFdkh5bBQUc2vI33HMtHqZ9w3kiogmRCU9yfB8disWj4OsdVpssJt7Qd8d1liohxOvjvAOvkTEZjQzLDHqvMyYz89r4E8MGibixp6yB_dU7oqT2O9EtCtOVJzdmC7FjaC3XxQQVVWhlC56T_QNW2PhmYnPGGDNeQWHDzAoc6ZdRjFyRsWmJoV3HsqRO46Vx')"></div>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-surface text-[20px]">fullscreen</span>
+</div>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group relative cursor-pointer" onclick="openLightbox('placeholder', 'Plate 02 — Portrait of architect Maya Lind, Stockholm')">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist portrait of a blonde woman in high neck knitwear against concrete gallery wall, sharp daylight shadow." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLr24pw9eY1TvVNckGs-aF4UUPG6T5PyOo8_D5WY1hRHMchKEblXPdrTJDCYtFg1HvC2ofsztfBZ-xginQchUAQeRIQYAfN_-jOYavPW-DtlBtc3V5Cf2MMtMznRH5_7RhaRI3KKZjDet119xmylgEYE6fzR4n2fuCq1ctKi6yklnAas1ymgk0ExQm9A-ZSfRYGJPy1yOjeZBXM8QyaXnu1WfSXUQwDqJV2qI7K__fUuxM4ss32KTn')"></div>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-surface text-[20px]">fullscreen</span>
+</div>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group relative cursor-pointer" onclick="openLightbox('placeholder', 'Plate 03 — Shadow study, Arles')">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Architectural study of stone arches casting sharp linear shadow across an empty courtyard in Arles, south of France." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDV-7LzfA6ttHVvmAi7mdciWA6wCJuCtq8eFcrUe5WpfuXhDLw-a9cDnSTKq0be7tfc6-XuxeXue_0s8A65v9_VjsHYEfrah71phBnlohNTUWGN9_Stf7mp9Mu0VR2eULzax0EyHtiwOlnP6BLCC8kVOgCxa30uhLobJv5DqY_ZSmFlClT8WIfVVWMbmR41jck1GkX8ICSOUSom4J6dYT8ykV9pvwyoeEWdne8joVLwj1DQmX8mjKso')"></div>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-surface text-[20px]">fullscreen</span>
+</div>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group relative cursor-pointer" onclick="openLightbox('placeholder', 'Plate 04 — Bridal veil movement in open vineyard')">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Editorial wedding photo of light translucent veil catching wind over golden dry grass, Provence summer twilight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2rYXunx7i9oc1p-F7xpoGwPlvd9YDf2JjU9lGixANRcVr274DTKEodx_Wqp0jG87Wxcrbiofvns4L-DPDmZaotnmXVGkJZXhcB-Ds1UgmOPXQ_NqO2df0CzRyCrN38xl9NaUPPOTwG4MeTtoq3eQbHTqdLGqxooC-VsV0eG670KY1JAm-vrcfm7NZurtKbQr0XevLS_SrwJrVZztoprnrcFhYch8bHK9baV7eh9l80pksHIsaAVVN')"></div>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-surface text-[20px]">fullscreen</span>
+</div>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group relative cursor-pointer" onclick="openLightbox('placeholder', 'Plate 05 — Traditional tea room sliding partition, Nara')">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Subdued interior of a Japanese wooden minka with shoji screens letting in diffuse soft white morning light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAf9tJ2KdPyQWrwpEbqJ_gFUkDEY5T_P49LEgiv9G0b_rYwqhVrnzq83BvYwUGvN_5EGOwFQ-7lwruUe07a0ZRo8ps5GfOO6fsycA3-0zCO4ZsKX02QJ7a_VYlP84YHyZ-bRWlRz7kAqPbknGCdecVhWSdEDkcWzpoTMdRpxRq_dcCnCT8S1eZSJ31lvx-rcLeV22YPsFjjmwHE-QZwwBwCjzoXiAZHZbolwPosS2GKRVRVW7bqC1OS')"></div>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-surface text-[20px]">fullscreen</span>
+</div>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group relative cursor-pointer" onclick="openLightbox('placeholder', 'Plate 06 — Darkroom silver bath development in progress')">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Photographer red safelight darkroom scene, liquid chemical tray with emergent silver gelatin print, artisan craft process." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA18UCFz5cdbbKK0asuZboTB3sevObBMox9R2iaXFcPvX5cGdEfAQyqHFQpFxMBoeg1NkiF_Qqawkdts5KfuRoPUi-9ldVDhzJKyO-cZ7EU_CqgRjknd3cNYMze4srX-rOLsvCdp8_YrWG7rWAPTKqDpXQv8E5GGtkQp2Fg_LNZis6IlTQhimYEwsCpxcRYZnqgOCJTfDyfqfzKtDbsASraNYi3f7oulsWoS3OvI9OSIdPy2s3SvluI')"></div>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-surface text-[20px]">fullscreen</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. CONTACT & BESPOKE INQUIRY SECTION -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-background" id="contact-inquiry">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left Column Statement -->
+<div class="md:col-span-5 flex flex-col justify-between space-y-space-lg">
+<div>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest block mb-space-xs">Availability 2026 / 2027</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight leading-tight mb-space-md">
+            Let's create something beautiful.
+          </h2>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant max-w-md">
+            For wedding bookings, portrait appointments, editorial assignments, or print monograph licensing.
+          </p>
+</div>
+<div class="space-y-space-sm pt-space-md border-t border-surface-container-highest">
+<div class="font-caption-meta text-caption-meta text-outline uppercase tracking-widest">Direct Contact</div>
+<p class="font-body-md text-body-md text-primary">atelier@elenavance.com</p>
+<p class="font-body-md text-body-md text-on-surface-variant">+33 (0)1 42 68 90 22</p>
+<p class="font-caption-meta text-caption-meta text-outline pt-space-xs">Response time within 48 business hours.</p>
+</div>
+</div>
+<!-- Right Column Editorial Form -->
+<div class="md:col-span-7 md:pl-space-md">
+<form class="flex flex-col space-y-space-md bg-surface-container-low p-space-lg" onsubmit="handleFormSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Name Input -->
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Your Full Name *</label>
+<input class="bg-transparent border-b border-outline pb-space-xs font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors placeholder:text-outline/60" placeholder="e.g. Eleanor Vance" required="" type="text"/>
+</div>
+<!-- Email Input -->
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Email Address *</label>
+<input class="bg-transparent border-b border-outline pb-space-xs font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors placeholder:text-outline/60" placeholder="eleanor@domain.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Project Type Selection -->
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Project Type *</label>
+<select class="bg-transparent border-b border-outline pb-space-xs font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors">
+<option value="wedding">Wedding Monograph</option>
+<option value="portrait">Studio Portrait</option>
+<option value="editorial">Fashion / Editorial</option>
+<option value="commercial">Commercial / Architectural</option>
+<option value="other">Other Collaboration</option>
+</select>
+</div>
+<!-- Estimated Date -->
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Anticipated Date</label>
+<input class="bg-transparent border-b border-outline pb-space-xs font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors placeholder:text-outline/60" placeholder="Month / Year" type="text"/>
+</div>
+<!-- Location -->
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Location / Venue</label>
+<input class="bg-transparent border-b border-outline pb-space-xs font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors placeholder:text-outline/60" placeholder="City, Country" type="text"/>
+</div>
+</div>
+<!-- Message -->
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Project Details &amp; Vision</label>
+<textarea class="bg-transparent border-b border-outline pb-space-xs font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors resize-none placeholder:text-outline/60" placeholder="Tell me about your narrative, locations, timeline, or mood..." rows="4"></textarea>
+</div>
+<div class="pt-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<span class="font-caption-meta text-caption-meta text-outline">
+              Archival security assured. Your details remain completely confidential.
+            </span>
+<button class="px-8 py-3 bg-primary text-on-primary font-label-caps text-label-caps tracking-widest uppercase hover:bg-secondary transition-colors cursor-pointer" type="submit">
+              SEND INQUIRY →
+            </button>
+</div>
+<div class="hidden font-body-md text-body-md text-primary pt-space-xs border-t border-outline-variant" id="form-success-note">
+            Thank you. Your dossier has been transmitted to Eléna Vance Studio. You will receive a response shortly.
+          </div>
+</form>
+</div>
+</div>
+</section>
+<!-- 10. FINAL STATEMENT IMAGE -->
+<section class="relative w-full h-[665px] overflow-hidden group cursor-pointer" onclick="document.getElementById('contact-inquiry').scrollIntoView({ behavior: 'smooth' })">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-[1.03]" data-alt="Panoramic fine art architectural image of a grand marble doorway bathed in dramatic soft morning light, casting warm geometric shadows onto limestone floors, museum gallery stillness." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtpfFTODSqXrBeGueBn73LEftgjHzZjAdzcX6WeL_OUBDzxS3lVCc0fCTP6u61EFlEwzu7OquEY_eOVx6Xo6uF2G0hHLrx988RRS5r7ffoeR4j81KykVMQEOaLWdMKy7pxp-QbewzpjeYBwdqyKRSYB0yqBNky7y4z0VV0QGw1nwCCaGQghOJE1-jEefXsl3nv3XxjBU-0VYqp5fp5uajOwibros1dHngKI1nKJEKvCf0bihJuSo0Z')"></div>
+<div class="absolute inset-0 bg-primary/30 group-hover:bg-primary/50 transition-colors flex flex-col items-center justify-center p-space-md text-center">
+<span class="font-label-caps text-label-caps text-surface uppercase tracking-[0.3em] mb-space-xs">Archive N° 092</span>
+<h2 class="font-display-hero text-headline-lg md:text-display-hero text-surface tracking-tight group-hover:tracking-wide transition-all duration-300">
+        LET'S WORK TOGETHER →
+      </h2>
+<span class="font-caption-meta text-caption-meta text-surface/80 uppercase tracking-widest mt-space-sm">Commencing Commissions 2026</span>
+</div>
+</section>
+<!-- INTERACTIVE MODAL: EDITORIAL CASE STUDY DRAWER -->
+<div class="fixed inset-0 z-50 bg-primary/80 backdrop-blur-sm hidden flex justify-end" id="project-modal">
+<div class="w-full max-w-3xl h-full bg-background overflow-y-auto p-margin-mobile md:p-margin flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center pb-space-sm border-b border-surface-container-highest mb-space-lg">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest" id="modal-category">Project Study</span>
+<button class="text-primary hover:text-outline cursor-pointer flex items-center gap-1 font-label-caps text-label-caps uppercase tracking-widest" onclick="closeProject()">
+            CLOSE <span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-1" id="modal-title">Project Title</h2>
+<span class="font-caption-meta text-caption-meta text-outline uppercase tracking-widest block mb-space-md" id="modal-meta">Location · Year</span>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant leading-relaxed mb-space-lg" id="modal-synopsis">
+          Project synopsis will appear here.
+        </p>
+<!-- Photobook Layout Sequence -->
+<div class="space-y-space-md mb-space-lg">
+<div class="aspect-[16/10] bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center cursor-zoom-in" data-alt="Editorial spreads from photobook project showing monochrome architectural portrait in dramatic interior illumination." onclick="openLightbox('placeholder', 'Case Study Spread 01')" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvw3yq9pDdjqrYJ7rRImn2HscWermrAzYZ-UQP3xvxrB6Io_tlcUHviaI6EatQy9PfnZpB3GeXMqcGvlW1uYXkNtk3e0ehRDyzahOc_6Zaxzzwe5kqEKDvbMCdinNl33vm1DMpiEKpXRnbgnVsfVnn1QTMq66emCS6FfS4e3a4bZv-XHW6DCZooxQc8sWg_Evbld5mk_GZlwg4bejg6sy0oW4iohWlXeWHQLvgH3wo0yIbVmj4jrPA')"></div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="aspect-square bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center cursor-zoom-in" data-alt="Candid detail plate of hand gesture and textured silk garment." onclick="openLightbox('placeholder', 'Case Study Detail 02')" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5Ljfpa3ALgZslhAaf3Ifm4iJhpWzwWfRSNox-5DNGeC2RfeOVLTvuh--2WdO44PsmaF9tRQg3053DWVhliVaDXXqhF5dWFPu4M-3xjwQ8IAjoNVHeg93TwHOzI5pVgXe3yFrtxms7OZxCOUiwd5lovAWH-UVSOeYKozW92vVkCTdtiZfZ82IkU2OvpJL74oX_MXVH31hQnnfnnHLnmL9FSbvEcl6f-uTjoz7zwP32-axhKxLl2U88')"></div>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center cursor-zoom-in" data-alt="Wide perspective of empty architectural courtyard in evening light." onclick="openLightbox('placeholder', 'Case Study Detail 03')" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBpRaTFrAkPp0BEqr8Zpvy7EVUouMyuEgVWQuvAF6erCaeoQQg-0i8YCwgtmcPAZ1StksjtivBPZEo5uyf5y0jngQg2r5bWxlYPs1OmZANAdSNqrOkCODxKepzqEjQJnkUWNt2a31t3rlLYSZ9t0x0szOsDtAuS4Nk74Ac0aJN1daaagSha8qflKNahQpB50qbieC0sraBqcmwRvITxGWbrzpEMsgHLi3Bf2pRDTfnCr79Ox06jDuhF')"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-surface-container-highest flex justify-between items-center">
+<a class="font-label-caps text-label-caps text-primary uppercase tracking-widest underline underline-offset-4" href="#contact-inquiry" onclick="closeProject()">
+          Inquire About Similar Commissions →
+        </a>
+<span class="font-caption-meta text-caption-meta text-outline">Archival Monograph Plate</span>
+</div>
+</div>
+</div>
+<!-- FULLSCREEN IMAGE LIGHTBOX VIEWER -->
+<div class="fixed inset-0 z-50 bg-primary hidden flex flex-col justify-between p-space-md md:p-space-lg text-surface" id="lightbox-modal">
+<!-- Top Controls -->
+<div class="flex justify-between items-center w-full">
+<span class="font-caption-meta text-caption-meta tracking-widest text-surface/70" id="lightbox-counter">01 / 06</span>
+<button class="text-surface hover:text-surface-container-highest cursor-pointer flex items-center gap-1 font-label-caps text-label-caps tracking-widest uppercase" onclick="closeLightbox()">
+<span>ESC</span>
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Center Display -->
+<div class="relative flex-1 flex items-center justify-center p-space-sm md:p-space-md">
+<button class="absolute left-0 p-space-sm text-surface/60 hover:text-surface cursor-pointer" onclick="prevLightbox()">
+<span class="material-symbols-outlined text-[32px]">west</span>
+</button>
+<div class="max-h-[819px] max-w-5xl overflow-hidden flex flex-col items-center">
+<img class="max-h-[768px] w-auto object-contain" data-alt="Fullscreen high resolution archival silver gelatin photographic master plate with exquisite grain and tonal depth." id="lightbox-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6wDNT8FTUleKv88CmtAGOhKosixfH4viT7qzaRSejQx2EoXaHtGum4iB_2J7Fsk-3gmwYoNz2xNEijiwl_Z1r4rFSCQKsjkXNknloiYaND-1WmwECAa9_yhwd87jUTcKSWiFODXuxb7jpKxPIwp_ou28G2bLxbTNqWmNS-J6NZbNqOEo0PeyueRjan50_VywEtkulQojftuHTbTX_K6UZDpvSJ7PAtqOr6x-kxuqebUYvcG8udUzr"/>
+<p class="font-caption-meta text-caption-meta text-surface/70 mt-space-sm tracking-wider text-center" id="lightbox-caption">Caption</p>
+</div>
+<button class="absolute right-0 p-space-sm text-surface/60 hover:text-surface cursor-pointer" onclick="nextLightbox()">
+<span class="material-symbols-outlined text-[32px]">east</span>
+</button>
+</div>
+<!-- Bottom Meta -->
+<div class="flex justify-between items-center text-surface/50 font-caption-meta text-caption-meta border-t border-surface/10 pt-space-xs">
+<span>Eléna Vance Studio Archive</span>
+<span class="hidden sm:inline">Medium Format Gelatin Silver Print</span>
+</div>
+</div>
+<!-- Micro-interactions & Handlers JavaScript -->
+<script>
+    // Hero staggered mount reveal
+    window.addEventListener('DOMContentLoaded', () => {
+      const heroText = document.getElementById('hero-text-block');
+      const heroBg = document.getElementById('hero-bg');
+      if (heroText) {
+        heroText.style.opacity = '1';
+        heroText.style.transform = 'translateY(0)';
+      }
+      if (heroBg) {
+        heroBg.classList.remove('scale-[1.04]');
+        heroBg.classList.add('scale-100');
+      }
+    });
+
+    // Custom interactive cursor follower badge
+    const cursorBadge = document.getElementById('dynamic-cursor-badge');
+    const cursorText = document.getElementById('dynamic-cursor-text');
+
+    if (cursorBadge && window.innerWidth >= 1024) {
+      window.addEventListener('mousemove', (e) => {
+        cursorBadge.style.left = e.clientX + 'px';
+        cursorBadge.style.top = e.clientY + 'px';
+      });
+
+      // Hover triggers on images
+      document.querySelectorAll('.gallery-item, .aspect-square, .service-row').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          cursorBadge.classList.remove('opacity-0');
+          cursorBadge.classList.add('opacity-100');
+          if (el.classList.contains('gallery-item')) cursorText.textContent = 'OPEN CASE';
+          else if (el.classList.contains('service-row')) cursorText.textContent = 'EXPAND';
+          else cursorText.textContent = 'VIEW';
+        });
+        el.addEventListener('mouseleave', () => {
+          cursorBadge.classList.remove('opacity-100');
+          cursorBadge.classList.add('opacity-0');
+        });
+      });
+    }
+
+    // Category Filter Filtering
+    const filterButtons = document.querySelectorAll('.gallery-filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('text-primary', 'underline', 'underline-offset-4');
+          b.classList.add('text-outline');
+        });
+        btn.classList.remove('text-outline');
+        btn.classList.add('text-primary', 'underline', 'underline-offset-4');
+
+        const cat = btn.getAttribute('data-category');
+        galleryItems.forEach(item => {
+          if (cat === 'ALL' || item.getAttribute('data-category') === cat) {
+            item.style.display = 'flex';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Case Study Modal
+    function openProject(title, meta, category, synopsis) {
+      document.getElementById('modal-title').textContent = title;
+      document.getElementById('modal-meta').textContent = meta;
+      document.getElementById('modal-category').textContent = category + ' / Monograph';
+      document.getElementById('modal-synopsis').textContent = synopsis;
+      const modal = document.getElementById('project-modal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProject() {
+      const modal = document.getElementById('project-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Accordion Toggle
+    function toggleService(row) {
+      const details = row.querySelector('.service-details');
+      const icon = row.querySelector('.service-icon');
+      const isOpen = !details.classList.contains('hidden');
+      
+      // Close others for neat single-row focus
+      document.querySelectorAll('.service-details').forEach(d => d.classList.add('hidden'));
+      document.querySelectorAll('.service-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+      if (!isOpen) {
+        details.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    // Fullscreen Lightbox
+    const lightboxImages = [
+      { src: 'placeholder', caption: '01 / Plate 01 — Morning mist over the Seine, Paris' },
+      { src: 'placeholder', caption: '02 / Plate 02 — Portrait of architect Maya Lind, Stockholm' },
+      { src: 'placeholder', caption: '03 / Plate 03 — Shadow study, Arles' },
+      { src: 'placeholder', caption: '04 / Plate 04 — Bridal veil movement in open vineyard' },
+      { src: 'placeholder', caption: '05 / Plate 05 — Traditional tea room sliding partition, Nara' },
+      { src: 'placeholder', caption: '06 / Plate 06 — Darkroom silver bath development in progress' }
+    ];
+    let activeLightboxIndex = 0;
+
+    function openLightbox(src, caption) {
+      const lb = document.getElementById('lightbox-modal');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+      const count = document.getElementById('lightbox-counter');
+      
+      const foundIdx = lightboxImages.findIndex(item => item.caption.includes(caption));
+      activeLightboxIndex = foundIdx !== -1 ? foundIdx : 0;
+      
+      updateLightboxDisplay();
+      lb.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const lb = document.getElementById('lightbox-modal');
+      lb.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function prevLightbox() {
+      activeLightboxIndex = (activeLightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
+      updateLightboxDisplay();
+    }
+
+    function nextLightbox() {
+      activeLightboxIndex = (activeLightboxIndex + 1) % lightboxImages.length;
+      updateLightboxDisplay();
+    }
+
+    function updateLightboxDisplay() {
+      const item = lightboxImages[activeLightboxIndex];
+      document.getElementById('lightbox-caption').textContent = item.caption;
+      document.getElementById('lightbox-counter').textContent = `0${activeLightboxIndex + 1} / 0${lightboxImages.length}`;
+    }
+
+    // Keyboard navigation
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+        closeProject();
+      }
+      if (e.key === 'ArrowLeft') prevLightbox();
+      if (e.key === 'ArrowRight') nextLightbox();
+    });
+
+    // Editorial Form Submit Micro-feedback
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const success = document.getElementById('form-success-note');
+      if (success) {
+        success.classList.remove('hidden');
+        e.target.reset();
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_0_rgba(0,0,0,0.04)] mt-space-xl"><div class="w-full px-margin-mobile md:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-space-xl"><div class="md:col-span-5 flex flex-col justify-between space-y-space-md"><span class="font-headline-md text-headline-md text-primary tracking-tight">Aurelien Vance Studio</span><p class="font-body-editorial text-body-editorial text-on-surface-variant max-w-md">Contemporary architectural, portrait, and documentary monographs. Available for international commissions and editorial representation.</p></div><div class="md:col-span-3 flex flex-col space-y-space-sm"><span class="font-label-caps text-label-caps uppercase text-outline tracking-widest mb-space-xs">Archive &amp; Studio</span><span class="font-body-md text-body-md text-on-surface">Rue du Temple 74, 75003 Paris</span><span class="font-body-md text-body-md text-on-surface-variant">By appointment only</span><a class="font-caption-meta text-caption-meta text-on-surface hover:text-outline transition-colors underline underline-offset-4 mt-space-xs" href="mailto:atelier@aurelienvance.com">atelier@aurelienvance.com</a></div><div class="md:col-span-2 flex flex-col space-y-space-sm"><span class="font-label-caps text-label-caps uppercase text-outline tracking-widest mb-space-xs">Dispatch</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="work" href="#">Selected Works</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Commissions</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">Exhibitions</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Press &amp; Licensing</a></div><div class="md:col-span-2 flex flex-col space-y-space-sm"><span class="font-label-caps text-label-caps uppercase text-outline tracking-widest mb-space-xs">Discourse</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Instagram</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Artsy</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Substack</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Monograph 2026</a></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="font-caption-meta text-caption-meta text-outline">© 2026 Aurelien Vance. All archival photographic plates and prints reserved.</div><div class="flex items-center gap-space-lg font-caption-meta text-caption-meta text-outline"><a class="hover:text-on-surface transition-colors" href="#">Colophon</a><a class="hover:text-on-surface transition-colors" href="#">Catalog Raisonné</a><a class="hover:text-on-surface transition-colors" href="#">Privacy &amp; Rights</a></div></div></div></footer><script>const dot = document.getElementById('cursor-dot'); const ring = document.getElementById('cursor-ring'); if (dot && ring) { window.addEventListener('mousemove', (e) => { dot.style.left = `${e.clientX}px`; dot.style.top = `${e.clientY}px`; ring.style.left = `${e.clientX}px`; ring.style.top = `${e.clientY}px`; }); document.querySelectorAll('a, button').forEach(elem => { elem.addEventListener('mouseenter', () => { ring.style.transform = 'translate(-50%, -50%) scale(1.6)'; ring.style.borderColor = '#111111'; }); elem.addEventListener('mouseleave', () => { ring.style.transform = 'translate(-50%, -50%) scale(1)'; ring.style.borderColor = 'rgba(196, 199, 199, 0.4)'; }); }); }</script></body></html>
